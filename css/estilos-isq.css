@@ -1,0 +1,85 @@
+  /* Posible efecto de "PHOTOGRAPHY" en el fondo como texto grande */
+  .hero-section::before {
+    content: "PROYECTEMOS";
+    position: absolute;
+    font-size: 12vw;
+    font-weight: 900;
+    opacity: 0.05;
+    color: #fff;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  /* Contenido principal del hero */
+  .contenido-hero {
+    max-width: 100%;
+    color: white;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Estilo para el título principal */
+  #titulo-principal {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilo para el span dentro del título, similar al "PHOTOGRAPHY" en rosa */
+  #titulo-principal span {
+    display: block;
+    color: #ff59b7; /* Color rosa similar al de la imagen */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Estilo para la descripción */
+  .descripcion-hero {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    max-width: 90%;
+  }
+  
+  /* Botón similar al "Contact Now" */
+  .btn-contactenos {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff59b7, #a759ff);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-contactenos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media queries para hacerlo responsivo */
+  @media (max-width: 768px) {
+    /* main */
+    main{
+        display: block;
+        width: 100%;
+      }
+      .contenido-hero{
+        width: 100%;
+      }
+    #titulo-principal {
+      font-size: 2.5rem;
+    }
+    
+    .descripcion-hero {
+      font-size: 1rem;
+    }
+  }

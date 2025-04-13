@@ -1,0 +1,133 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    
+  }
+  body {
+    background: radial-gradient(
+      circle at bottom left,
+      #9b27e9 0%, 
+      #16455f 50%, 
+      #056bc4 100%
+    );
+    min-height: 100vh;
+    margin: 20px;
+    padding: auto;
+    
+
+  }
+  header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .quick-links, .social-media, .footer-message {
+    flex: 1; 
+  }
+  
+  
+  .footer-credits {
+    width: 100%;
+    flex-basis: 100%; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+    font-size: 10px;
+    font-size: clamp(5px, 9vw, 10px);
+    color: gray;
+  }
+
+
+ /* Estilo básico para el menú en pantallas grandes */
+.menu-navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .menu-navegacion a {
+    padding: 10px;
+    display: block;
+  }
+  
+  /* El botón hamburguesa debe estar oculto en pantallas grandes */
+  .btn-hamb {
+    display: none !important; /* Forzamos que esté oculto */
+    font-size: 30px;
+    cursor: pointer;
+  }
+    .menu-navegacion .btn-hamb {
+        display: none;
+    }
+  /* Estilos seccion hero-section */
+  main{
+    display: flex;
+  }
+  main sectionc{
+    width: 50%;
+  }
+  .hero-section{
+    width: 40%;
+    margin: auto;
+    padding: auto;
+  }
+
+  /* ---- Estilos para pantallas pequeñas ---- */
+  @media screen and (max-width: 768px) {
+    /* Oculta los links de navegación excepto el botón hamburguesa */
+    .menu-navegacion a:not(.btn-hamb) {
+      display: none;
+    }
+    
+    /* Solo en pantallas pequeñas, mostramos el botón hamburguesa */
+    .btn-hamb {
+      display: block !important;
+    }
+    .menu-navegacion .btn-hamb {
+        display: block;
+      }
+    
+    /* Cuando el menú está activo, mostrar todos los enlaces */
+    .menu-navegacion.show-menu a {
+      display: block;
+    }
+    .acciones-header {
+        display: none;
+      }
+
+    .menu-navegacion {
+        position: relative;
+    }
+    
+    .btn-hamb {
+        margin-left: auto; 
+    }
+    /* main */
+    main{
+        display: block;
+        width: 100%;
+      }
+      .contenido-hero{
+        width: 100%;
+      }
+  }
+  @media screen and (max-width: 400px) {
+    footer .footer-content{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+  }     
