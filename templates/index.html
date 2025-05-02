@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco Energy Latin America</title>
+
+  <script src="{{ url_for('static', filename='js/cotiza.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/facturacion.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/cotizacion.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/facturacion.css') }}">
+  <!-- <link rel="stylesheet" href="css/nosotros.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo"><a href="#">Eco Energy Latin America</a></div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cotizacion">Cotización</a></li>
+        <li><a href="#facturacion">Facturación</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#personal-empresa">Personal y Empresa</a></li>
+        <li><a href="https://wa.link/7djdaf" target="_blank">Contacto</a></li>
+      </ul>
+
+      <a href="https://wa.link/7djdaf" target="_blank" class="cta">¡Solicitud de servicio!</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h4>Donde la seguridad</h4>
+      <h1>La tecnología y el diseño<br>se conectan.</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ad, debitis atque harum consequatur quae
+        obcaecati, ipsum magnam perferendis dolore excepturi quam.</p>
+      <a href="https://wa.link/7djdaf" target="_blank" class="btn">Contáctanos ahora</a>
+    </div>
+    <div class="hero-gallery">
+      <!-- Flip Card 1: Home -->
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <i class="fas fa-home service-icon"></i>
+            <h3>Inicio</h3>
+          </div>
+          <div class="card-back">
+            <h3>Inicio</h3>
+            <p>Panel principal con acceso rápido a los módulos, resúmenes gráficos, notificaciones recientes y estado
+              general de la plataforma.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 2: Cotización de Proyecto -->
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <i class="fas fa-file-invoice-dollar service-icon"></i>
+            <h3>Cotización</h3>
+          </div>
+          <div class="card-back">
+            <h3>Cotización de Proyecto</h3>
+            <p>Generación de cotizaciones personalizadas, estimación de costos, selección de servicios, productos y
+              envío directo al cliente.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 3: Facturación -->
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <i class="fas fa-file-invoice service-icon"></i>
+            <h3>Facturación</h3>
+          </div>
+          <div class="card-back">
+            <h3>Facturación</h3>
+            <p>Emisión de facturas electrónicas, control de pagos, historial de transacciones y generación de reportes
+              contables.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 4: Proyectos -->
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <i class="fas fa-project-diagram service-icon"></i>
+            <h3>Proyectos</h3>
+          </div>
+          <div class="card-back">
+            <h3>Gestión de Proyectos</h3>
+            <p>Registro y seguimiento de proyectos activos, etapas de ejecución, responsables, tiempos estimados y
+              avances.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 5: Clientes -->
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <i class="fas fa-users service-icon"></i>
+            <h3>Clientes</h3>
+          </div>
+          <div class="card-back">
+            <h3>Gestión de Clientes</h3>
+            <p>Base de datos de clientes, historial de proyectos, contacto directo, seguimiento de solicitudes y
+              preferencias.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 6: Personal y Empresa -->
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <i class="fas fa-user-cog service-icon"></i>
+            <h3>Personal y Empresa</h3>
+          </div>
+          <div class="card-back">
+            <h3>Personal y Empresa</h3>
+            <p>Información de empleados, roles y permisos, estructura de la empresa, configuraciones generales y
+              políticas internas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="cotizacion" class="cotizacion-section">
+    <h2>Cotización de Proyecto Solar</h2>
+    <div class="cotizacion-container">
+
+      <!-- Formulario -->
+      <form class="cotizacion-form">
+        <label for="cliente-nombre">Nombre:</label>
+        <input type="text" id="cliente-nombre" required>
+        <label for="cliente-cedula">Cedula:</label>
+        <input type="text" id="cliente-cedula" required>
+        <label for="cliente-celular">Celular:</label>
+        <input type="text" id="cliente-celular" required>
+        <label for="cliente-correo">Email:</label>
+        <input type="email" id="cliente-correo" required>
+        <label for="cliente-ciudad">Ubicaioón:</label>
+        <input type="text" id="cliente-ciudad" placeholder="Ciudad o ubicación">
+        <label for="cliente-direccion">Dirección:</label>
+        <input type="text" id="cliente-direccion" placeholder="Direccion">
+
+
+        <label for="potencia-requerida">Potencia requerida (W):</label>
+        <input type="number" id="potencia-requerida" placeholder="Ej. 5000">
+
+        <label for="potencia-paneles">Potencia de paneles (W):</label>
+        <input type="number" id="potencia-paneles" placeholder="Ej. 450">
+
+        <label for="horas-sol">Horas Sol Pico (HSP):</label>
+        <input type="number" step="0.1" id="horas-sol" placeholder="Ej. 4.5">
+
+        <label for="autonomia">Autonomía:</label>
+        <select id="autonomia">
+          <option value="ongrid">OnGrid</option>
+          <option value="offgrid">OffGrid</option>
+        </select>
+
+        <label for="factor-perdidas">Factor de pérdidas (%):</label>
+        <input type="number" step="0.1" id="factor-perdidas" placeholder="Ej. 15">
+
+        <button type="button" onclick="mostrarResultados()">Cotizar</button>
+      </form>
+
+      <!-- Resultados -->
+      <div class="cotizacion-resultados" id="resultados" style="display: none;">
+        <!-- <h3>Resultados de Cotización</h3>
+        <p><strong>Número de paneles:</strong> 12</p>
+        <p><strong>Tipo de sistema:</strong> OffGrid</p>
+        <p><strong>Tipo de inversor:</strong> Inversor híbrido 5kW</p>
+        <p><strong>Número de baterías:</strong> 4</p>
+        <p><strong>Precio por panel:</strong> $680,000 COP</p>
+        <p><strong>Precio estimado del sistema:</strong> $9,800,000 COP</p>
+        <p><strong>Costo de instalación:</strong> $1,400,000 COP</p>
+        <p><strong>Total con instalación:</strong> $11,200,000 COP</p>
+        <p><strong>Observaciones:</strong> Incluye monitoreo remoto, estructura y garantía por 5 años.</p> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="facturacion" class="facturacion-section">
+    <div class="contenedor-facturacion">
+      <!-- Columna de Cotizaciones -->
+      <div class="columna-cotizaciones">
+        <h2>Cotizaciones</h2>
+        <div id="lista-cotizaciones" class="lista"></div>
+      </div>
+
+      <!-- Columna de Facturas -->
+      <div class="columna-facturas">
+        <h2>Facturas</h2>
+        <div id="lista-facturas" class="lista"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="proyectos"> ... </section>
+  <section id="clientes"> ... </section>
+  <section id="personal-empresa"> ... </section>
+
+  <footer>
+    <div class="footer-container">
+      <!-- <div class="footer-left">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+      </div> -->
+      <div class="footer-center">
+        <h3>Redes Sociales</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <!-- <div class="footer-right">
+        <h3>Contacto</h3>
+        <p>¿Tienes alguna pregunta o necesitas información?</p>
+        <p>Estamos aquí para ayudarte.</p>
+        <a href="#" class="btn" style="margin-top: 1rem;">Escríbenos</a>
+      </div> -->
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ProyectemosOk. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Script para el menú móvil
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-menu').classList.toggle('active');
+      const spans = document.querySelectorAll('.menu-toggle span');
+      spans[0].classList.toggle('active');
+      spans[1].classList.toggle('active');
+      spans[2].classList.toggle('active');
+    });
+  </script>
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

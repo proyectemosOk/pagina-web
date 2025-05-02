@@ -563,3 +563,11 @@ footer ul li a:hover {
     height: 200px;
   }
 }
+#nav-menu li a.active {
+  color: #00c853;
+  font-weight: bold;
+  border-bottom: 2px solid #00c853;
+}
+.hidden {
+  display: none !important;
+}
