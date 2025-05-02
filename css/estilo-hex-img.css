@@ -22,8 +22,8 @@ img {
 }
 
 .segunda-fila {
-    margin-top: -30px; /* Solo margen superior negativo */
-    margin-left: -100px; /* Margen izquierdo positivo para desplazar */
+    margin-top: -30px; 
+    margin-left: -100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -83,6 +83,7 @@ img {
 @media screen and (max-width: 768px) {
     .contenedor-hexagonos {
         gap: 20px;
+        border: 1px solid black;
     }
     
     .hexagono {
