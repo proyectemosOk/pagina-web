@@ -13,7 +13,8 @@
         "instalacion": 1400000,
         "total": 5260000,
         "id": 1,
-        "fecha": "2025-05-02 02:36:01"
+        "fecha": "2025-05-02 02:36:01",
+        "facturada": true
     },
     {
         "nombre": "Fredy",
@@ -260,5 +261,43 @@
         "total": 5940000,
         "id": 14,
         "fecha": "2025-04-02 02:36:01"
+    },
+    {
+        "nombre": "Fredy Leon Garcia",
+        "cedula": "123568741",
+        "celular": "12365897840",
+        "correo": "hjf@gmail.com",
+        "numero": 1,
+        "ciudad": "Puana",
+        "direccion": "Centro",
+        "paneles": 3,
+        "sistema": "OffGrid",
+        "inversor": "Inversor OffGrid 5kW",
+        "baterias": 5,
+        "precio_panel": 680000,
+        "subtotal": 10990000,
+        "instalacion": 1400000,
+        "total": 12390000,
+        "fecha": "02/05/2025 07:13:29",
+        "id": 15
+    },
+    {
+        "nombre": "Edwin ",
+        "cedula": "12345678",
+        "celular": "987654321",
+        "correo": "info@gmail.com",
+        "numero": 3,
+        "ciudad": "ubate",
+        "direccion": "cra 6 n 5-30",
+        "paneles": 3,
+        "sistema": "OnGrid",
+        "inversor": "Inversor OnGrid 3.5kW",
+        "baterias": 0,
+        "precio_panel": 680000,
+        "subtotal": 4540000,
+        "instalacion": 1400000,
+        "total": 5940000,
+        "fecha": "02/05/2025 08:14:07",
+        "id": 16
     }
 ]

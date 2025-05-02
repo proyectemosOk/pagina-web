@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "Fredy ",
+        "celular": "3175414049",
+        "correo": "jfleong6@gmail.com",
+        "numero": 1,
+        "paneles": 2,
+        "sistema": "OnGrid",
+        "inversor": "Inversor OnGrid 3.5kW",
+        "baterias": 0,
+        "precio_panel": 680000,
+        "subtotal": 3860000,
+        "instalacion": 1400000,
+        "total": 5260000,
+        "id": 1,
+        "fecha": "2025-05-02 02:36:01"
+    }
+]
